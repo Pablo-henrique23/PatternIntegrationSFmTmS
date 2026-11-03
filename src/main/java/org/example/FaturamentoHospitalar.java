@@ -2,7 +2,6 @@ package org.example;
 
 import java.util.Objects;
 
-// Contexto do Strategy: delega o calculo a uma estrategia intercambiavel.
 public class FaturamentoHospitalar {
     private EstrategiaCobranca estrategia;
 

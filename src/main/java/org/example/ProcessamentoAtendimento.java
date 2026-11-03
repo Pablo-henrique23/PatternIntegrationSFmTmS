@@ -2,7 +2,6 @@ package org.example;
 
 import java.util.Objects;
 
-// Template Method: ordem fixa de validacao, ajuste, cobranca e registro.
 public abstract class ProcessamentoAtendimento {
     private final FabricaCobranca fabrica;
 
@@ -10,7 +9,6 @@ public abstract class ProcessamentoAtendimento {
         this.fabrica = Objects.requireNonNull(fabrica, "Fabrica obrigatoria");
     }
 
-    // Template Method: subclasses nao podem alterar o fluxo.
     public final ResultadoAtendimento processar(double valorBase) {
         validarValor(valorBase);
         double valorAjustado = ajustarValor(valorBase);
